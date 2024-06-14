@@ -2,6 +2,8 @@ package conta;
 
 import java.util.Scanner;
 import conta.model.Conta;
+import conta.model.ContaCorrente;
+import conta.model.ContaPoupanca;
 import conta.util.Cores;
 
 public class Menu {
@@ -18,6 +20,23 @@ public class Menu {
 		Scanner leia = new Scanner(System.in);
 
 		int opcao;
+		
+		//criando uma nova conta corrente
+		
+		ContaCorrente cc1= new ContaCorrente(2,321,1,"Daiane",500.0f);
+		cc1.visualizar();
+		cc1.sacar(289.0f);
+		cc1.depositar(2.0f);
+		cc1.visualizar();
+		
+		//criando uma nova conta poupança
+		
+		ContaPoupanca cp1= new ContaPoupanca(3,213,2,"Camila",999.0f);
+		cp1.visualizar();
+		cp1.sacar(289.0f);
+		cp1.depositar(2.0f);
+		cp1.visualizar();
+		
 
 		while (true) {
 

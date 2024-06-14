@@ -1,5 +1,5 @@
 package conta.model;
-
+//criando a classe conta, objeto conta, com todos os seus atributos, como numero, ag, tipo, titular e saldo
 public class Conta {
   
   private int numero;
@@ -15,7 +15,8 @@ public class Conta {
 		this.titular = titular;
 		this.saldo = saldo;
 	}
-
+	
+		
 	public int getNumero() {
 		return numero;
 	}
